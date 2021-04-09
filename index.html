@@ -5,34 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G3EkSHOP</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/apple-touch-icon.png">
 
 </head>
 
 
 <body>
+    <script src="/main.js"></script>
 
 
     <div class="header">
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="images/SITELOGO.png" width="125px">
+                <img src="/images/SITELOGO.png" width="125px">
             </div>
                         <nav>
                             <ul id="MenuItems">
                                 <l1><a href="">Home</a></l1>
                                 <l1><a href="product.html">Products</a></l1>
-                                 <l1><a href="">About</a></l1>
+                                 <l1><a href="cart.html">About</a></l1>
                                  <l1><a href="">Contact</a></l1>
                                 <l1><a href="">Account</a></l1>
                              </ul>
                         </nav>
-                        <img src="images/add-to-basket.png" width="25px" height="25px">
-                        <img src="images/menu.png" class="menu-icon"
+                        <img src="/images/add-to-basket.png" width="25px" height="25px"  > <a href="/cart.html"> cart</a>
+                        <img src="/images/menu.png" class="menu-icon"
                          onclick="menutoggle()">
 
          </div>
@@ -43,7 +45,7 @@
                  <a href="" class="btn" > Explore Now &#8594;</a>
              </div>
              <div class="col-2">
-                 <img src="images/output-onlinepngtools (1).png" alt="">
+                 <img src="/images/output-onlinepngtools (1).png" alt="">
              </div>
          </div>
     </div>
@@ -53,13 +55,13 @@
         <div class="small-container">
             <div class="row">
                 <div class="col-3">
-                    <img src="images/tech2.jpg" width="320px">
+                    <img src="/images/tech2.jpg" width="320px">
                 </div>
                 <div class="col-3">
-                    <img src="images/tech3.jpg" width="320px">
+                    <img src="/images/tech3.jpg" width="320px">
                 </div>
                 <div class="col-3">
-                    <img src="images/tech4.jpg" width="320px">
+                    <img src="/images/tech4.jpg" width="320px">
                 </div>
         </div>
 
@@ -70,7 +72,7 @@
         <h2 class="title">Feautred Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="images/watch1.jpg" alt="">
+                <img src="/images/watch1.jpg" alt="">
                 <h4>Apple Series 6</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -78,12 +80,15 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
+                    
 
                 </div>
-                <p>₹41,000</p>
+                <p>₹41,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                    <p id="demo"></p>
+
             </div>
             <div class="col-4">
-                <img src="images/headphone(UnmOZaNaNXG).jpg" alt="">
+                <img src="/images/headphone(UnmOZaNaNXG).jpg" alt="">
                 <h4>Bose 700</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -91,12 +96,13 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
-
+                    
                 </div>
-                <p>₹39,000</p>
+                <p>₹39,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/vr(ft1znxSenn8).jpg" alt="">
+                <img src="/images/vr(ft1znxSenn8).jpg" alt="">
                 <h4>Oculus Quest 2</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -106,11 +112,12 @@
                     <i class="fa fa-star-o"></i>
 
                 </div>
-                <p>₹29,000</p>
+                <p>₹29,000</p><button class="button1" onclick="myFunction1()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/bacpack" alt="">
-                <h4>Apple Series 6</h4>
+                <img src="/images/bacpack" alt="">
+                <h4>Arctic Fox</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -119,14 +126,15 @@
                     <i class="fa fa-star-o"></i>
 
                 </div>
-                <p>₹6,000</p>
+                <p>₹6,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <!---------first row latest products------->
         </div>
         <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="images/product1.jpg" alt="">
+                <img src="/images/product1.jpg" alt="">
                 <h4>Apple Airpods</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -136,10 +144,11 @@
                     <i class="fa fa-star-half-o"></i>
 
                 </div>
-                <p>₹9,000</p>
+                <p>₹9,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/product2..png" alt="">
+                <img src="/images/product2..png" alt="">
                 <h4>Marshall Emberton</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -149,10 +158,11 @@
                     <i class="fa fa-star-o"></i>
 
                 </div>
-                <p>₹11,000</p>
+                <p>₹11,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/product3.jpg" alt="">
+                <img src="/images/product3.jpg" alt="">
                 <h4>Go Pro Hero 7</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -162,10 +172,11 @@
                     <i class="fa fa-star-half-o"></i>
 
                 </div>
-                <p>₹32,990</p>
+                <p>₹32,990</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/product4.jpg" alt="">
+                <img src="/images/product4.jpg" alt="">
                 <h4>Amazon Alexa</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -175,11 +186,12 @@
                     <i class="fa fa-star-o"></i>
 
                 </div>
-                <p>₹4,400</p>
+                <p>₹4,400</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="row">
             <div class="col-4">
-                <img src="images/product5.jpg" alt="">
+                <img src="/images/product5.jpg" alt="">
                 <h4>Go Pro Fusion</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -189,10 +201,11 @@
                     <i class="fa fa-star-half-o"></i>
 
                 </div>
-                <p>₹39,000</p>
+                <p>₹39,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/product9.jpg" alt="">
+                <img src="/images/product9.jpg" alt="">
                 <h4>KeepBacK HEx5</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -202,10 +215,11 @@
                     <i class="fa fa-star-half-o"></i>
 
                 </div>
-                <p>₹12,500</p>
+                <p>₹12,500</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/product7.jpg" alt="">
+                <img src="/images/product7.jpg" alt="">
                 <h4>Nintendo Switch 2</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -215,10 +229,11 @@
                     <i class="fa fa-star-o"></i>
 
                 </div>
-                <p>₹30,500</p>
+                <p>₹30,500</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
             <div class="col-4">
-                <img src="images/product8.jpg" alt="">
+                <img src="/images/product8.jpg" alt="">
                 <h4>Apple TV+</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -228,7 +243,8 @@
                     <i class="fa fa-star-o"></i>
 
                 </div>
-                <p>₹19,000</p>
+                <p>₹19,000</p><button class="button1" onclick="myFunction()">Add To Cart</button>
+                <p id="demo"></p>
             </div>
   
         </div>
@@ -238,8 +254,8 @@
         <div class="small-container">
             <div class="row">
                 <div class="col-2">
-                    <video controls id="video1" width="480" height="360" autoplay=1&mute==1 >
-                        <source src="images/MacBook Air — Lightness — Apple_Trim.mp4" type="video/mp4">
+                    <video controls id="video1" width="480" height="360" autoplay=1&mute==1>
+                        <source src="/images/MacBook Air — Lightness — Apple_Trim.mp4" type="video/mp4">
                         sorry , your browser dosent support
                     </video>
                 </div>
@@ -275,24 +291,10 @@
             </div>
         </div>
     </div>
-    <!---------js for toggle menu--------->
-    <script>
-        var MenuItems= document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight ="0px";
-
-        function menutoggle(){
-            if(MenuItems.style.maxHeight =="0px")
-            {
-                MenuItems.style.maxHeight ="200px";
-            }
-            else
-            {
-                MenuItems.style.maxHeight ="0px";
-            }
-
-        }
-    </script>
-
+    <div class="about">
+        <h1>Hiie</h1>
+    </div>
+    
+    
 </body>                
 </html>

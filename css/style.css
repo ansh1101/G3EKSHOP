@@ -141,6 +141,14 @@ h4{
     transform: translateY(-20px);
     opacity: 80%;
 }
+.button1{
+    transition-duration: 0.4s;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
 
 /*--------offer-------*/
 .offer{
@@ -166,6 +174,10 @@ h4{
     width: 26px;
     margin-left: 20px;
     display: none;
+}
+.about{
+    background-color: black;
+    height: 12  0px;
 }
 /*------------------media query for menu--------------*/
 
