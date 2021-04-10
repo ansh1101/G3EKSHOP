@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G3EkSHOP</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/apple-touch-icon.png">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="scrpt.js"></script>
 
 
     <div class="header">
@@ -26,23 +26,23 @@
             </div>
                         <nav>
                             <ul id="MenuItems">
-                                <l1><a href="">Home</a></l1>
-                                <l1><a href="product.html">Products</a></l1>
-                                 <l1><a href="cart.html">About</a></l1>
-                                 <l1><a href="">Contact</a></l1>
-                                <l1><a href="">Account</a></l1>
+                                <li><a class="item1" href="">Home</a></li>
+                                <li><a class="item1" href="product.html">Products</a></li>
+                                 <li><a class="item1" href="cart.html">About</a></li>
+                                 <li><a class="item1" href="contact/index.html">Contact</a></li>
+                                <li><a class="item1" href="">Account</a></li>
                              </ul>
                         </nav>
-                        <img src="images/add-to-basket.png" width="25px" height="25px"  > <a href="cart.html"> cart</a>
+                        <img  src="images/add-to-basket.png" width="25px" height="25px"  > <a class="cart1" href="/cart.html"> cart</a>
                         <img src="images/menu.png" class="menu-icon"
-                         onclick="menutoggle()">
+                        onclick="menutoggle()">
 
          </div>
          <div class="row">
              <div class="col-2">
                  <h1> A Hub For All Your <br> Geeky Stuff ! </h1>
                  <p> Sometimes accessories are all you need <br> They speak for itself</p>
-                 <a href="" class="btn" > Explore Now &#8594;</a>
+                 <a href="" class="btn" > Explore Now &#8594; </a>
              </div>
              <div class="col-2">
                  <img src="images/output-onlinepngtools (1).png" alt="">
@@ -254,7 +254,7 @@
         <div class="small-container">
             <div class="row">
                 <div class="col-2">
-                    <video controls id="video1" width="480" height="360" autoplay=1&mute==1>
+                    <video controls id="video1" width="480" height="360" autoplay=1&mute=1>
                         <source src="images/MacBook Air — Lightness — Apple_Trim.mp4" type="video/mp4">
                         sorry , your browser dosent support
                     </video>
@@ -291,12 +291,27 @@
             </div>
         </div>
     </div>
-            <div class="about">
+    <div class="about">
         <h1>Hiie</h1>
     </div>
-    
-    
-    
+    <script>
+        
+  var MenuItems= document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle(){
+  if(MenuItems.style.maxHeight == "0px")
+  {
+    MenuItems.style.maxHeight ="200px";
+
+  }
+  else{
+    MenuItems.style.maxHeight ="0px";
+  }
+}
+
+    </script>
     
 </body>                
 </html>
